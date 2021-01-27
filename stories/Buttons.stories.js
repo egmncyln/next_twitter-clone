@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Button from '../components/Button';
+import NavButton from '../components/NavButton';
+import Navigation from '../components/Navigation';
 
 export default {
   title: 'Example/Buttons',
@@ -12,7 +14,11 @@ export default {
 
 // const Template = (args) => <Button {...args} />;
 
-export const Normal = () => <Button>Merhaba</Button>;
+export const Primary = () => <Button>Hello</Button>;
+
+export const Nav = () => <NavButton>Hello</NavButton>;
+
+export const Navigati = () => <Navigation />;
 
 // Primary.args = {
 //   primary: true,
