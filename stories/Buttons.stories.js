@@ -3,10 +3,12 @@ import React from 'react';
 import Button from '../components/Button';
 import NavButton from '../components/NavButton';
 import Navigation from '../components/Navigation';
+import { Home } from '../components/icons';
+import TitleBold from '../components/TitleBold';
 
 export default {
   title: 'Example/Buttons',
-  component: Button,
+  // component: Button,
   // argTypes: {
   //   backgroundColor: { control: 'color' },
   // },
@@ -14,11 +16,15 @@ export default {
 
 // const Template = (args) => <Button {...args} />;
 
-export const Primary = () => <Button>Hello</Button>;
+// export const Primary = () => <Button>Hello</Button>;
 
-export const Nav = () => <NavButton>Hello</NavButton>;
+export const NavigationButton = () => (
+  <NavButton>
+    <Home />
+    <TitleBold>Home</TitleBold>
+  </NavButton>);
 
-export const Navigati = () => <Navigation />;
+export const NavigationFull = () => <Navigation selectedKey="home" />;
 
 // Primary.args = {
 //   primary: true,
