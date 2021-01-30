@@ -1,26 +1,19 @@
-.navButton {
+.button {
   position: relative;
   color: var(--c-text-color);
   padding: 10px;
-  border-radius: 99px;
-  display: flex;
-  align-items: center;
 }
 
-.navButton:hover {
-  background-color: var(--c-theme-20);
-}
-
-.navButton svg {
+.button svg {
   font-size: 26px;
 }
 
-.navButton svg + * {
+.button svg + * {
   margin-left: 20px;
   margin-right: 15px;
 }
 
-.navButtonSelected {
+.buttonSelected {
   color: var(--c-theme);
 }
 

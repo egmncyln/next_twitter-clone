@@ -1,7 +1,7 @@
 import React from 'react';
 import NavButton from './NavButton';
 import { Twitter, Home, Explore, Notification, Messages, Bookmark, Lists, Profile, More } from './icons';
-import TitleBold from './TitleBold';
+import TextTitle from './TextTitle';
 import styles from './Navigation.module.css';
 
 function Navigation({ selectedKey }) {
@@ -13,42 +13,42 @@ function Navigation({ selectedKey }) {
 
             <NavButton selected={selectedKey === 'home'}>
                 <Home />
-                <TitleBold>Home</TitleBold>
+                <TextTitle>Home</TextTitle>
             </NavButton>
 
             <NavButton selected={selectedKey === 'explore'}>
                 <Explore />
-                <TitleBold>Explore</TitleBold>
+                <TextTitle>Explore</TextTitle>
             </NavButton>
 
             <NavButton selected={selectedKey === 'notification'} notify={5}>
                 <Notification />
-                <TitleBold>Notifications</TitleBold>
+                <TextTitle>Notifications</TextTitle>
             </NavButton>
 
             <NavButton selected={selectedKey === 'messages'}>
                 <Messages />
-                <TitleBold>Messages</TitleBold>
+                <TextTitle>Messages</TextTitle>
             </NavButton>
 
             <NavButton selected={selectedKey === 'bookmark'}>
                 <Bookmark />
-                <TitleBold>Bookmarks</TitleBold>
+                <TextTitle>Bookmarks</TextTitle>
             </NavButton>
 
             <NavButton selected={selectedKey === 'lists'}>
                 <Lists />
-                <TitleBold>Lists</TitleBold>
+                <TextTitle>Lists</TextTitle>
             </NavButton>
 
             <NavButton selected={selectedKey === 'profile'}>
                 <Profile />
-                <TitleBold>Profiles</TitleBold>
+                <TextTitle>Profiles</TextTitle>
             </NavButton>
 
             <NavButton selected={selectedKey === 'more'}>
                 <More />
-                <TitleBold>More</TitleBold>
+                <TextTitle>More</TextTitle>
             </NavButton>
         </nav>
     )

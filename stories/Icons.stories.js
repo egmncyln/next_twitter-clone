@@ -1,6 +1,7 @@
 import React from 'react';
 
 import * as Icons from '../components/icons';
+import Photo from '../components/Photo';
 
 export default {
     title: 'Example/Icons',
@@ -39,6 +40,7 @@ export const Icon = () => (
     </div>
 )
 
+export const ProfilePhoto = () => <Photo src="https://pbs.twimg.com/profile_images/1159877117091418112/QDzZbZ_7_400x400.jpg" />
 // Primary.args = {
 //   primary: true,
 //   label: 'Button',

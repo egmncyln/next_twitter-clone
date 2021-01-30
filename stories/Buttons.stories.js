@@ -4,7 +4,9 @@ import Button from '../components/Button';
 import NavButton from '../components/NavButton';
 import Navigation from '../components/Navigation';
 import { Home } from '../components/icons';
-import TitleBold from '../components/TitleBold';
+import TextTitle from '../components/TextTitle';
+import ThemeButton from '../components/ThemeButton';
+import Stack from '../components/Stack';
 
 export default {
   title: 'Example/Buttons',
@@ -16,12 +18,20 @@ export default {
 
 // const Template = (args) => <Button {...args} />;
 
-// export const Primary = () => <Button>Hello</Button>;
+export const Normal = () => <Button>Hello</Button>;
+
+export const Theme = () => (
+  <Stack gap={20}>
+    <ThemeButton>Hello</ThemeButton>
+    <ThemeButton full>Hello Full</ThemeButton>
+    <ThemeButton full big>Hello Full Big</ThemeButton>
+  </Stack>
+);
 
 export const NavigationButton = () => (
   <NavButton>
     <Home />
-    <TitleBold>Home</TitleBold>
+    <TextTitle>Home</TextTitle>
   </NavButton>);
 
 export const NavigationFull = () => <Navigation selectedKey="home" />;
