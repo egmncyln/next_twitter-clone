@@ -1,9 +1,24 @@
-.photo {
-  width: 47px;
+.box {
+  padding: 10px;
 }
 
-.img {
+.box:hover {
+  color: var(--c-text-color);
+}
+
+.body {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.body * {
   display: block;
-  width: 100%;
-  border-radius: 99px;
+}
+
+.slug {
+  color: var(--c-gray);
+}
+
+.icon {
+  margin-left: auto;
 }

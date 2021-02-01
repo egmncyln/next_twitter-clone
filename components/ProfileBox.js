@@ -1,13 +1,22 @@
 import React from 'react';
 import cn from 'classnames';
-import styles from './Photo.module.css';
+import styles from './ProfileBox.module.css';
+import Button from './Button';
+import Photo from './Photo';
+import { ArrowBottom } from './icons';
+import TextBody from './TextBody';
 
-function Photo({ src, alt }) {
+function ProfileBox({ name = 'Egemen Ceylan', slug = 'egmncyln' }) {
     return (
-        <div className={cn(styles.photo)}>
-            <img className={styles.img} src={src} alt={alt}></img>
-        </div>
+        <Button className={cn(styles.box)}>
+            <Photo />
+            <div className={styles.body}>
+                <TextBody bold>{name}</TextBody>
+                <TextBody className={styles.slug}>@{slug}</TextBody>
+            </div>
+            <ArrowBottom className={styles.icon} />
+        </Button>
     )
 }
 
-export default Photo;
+export default ProfileBox;
