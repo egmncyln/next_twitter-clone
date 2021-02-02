@@ -1,3 +1,5 @@
-.nav button + button {
-  margin-top: 8px;
+.nav {
+  button + button {
+    margin-top: 8px;
+  }
 }

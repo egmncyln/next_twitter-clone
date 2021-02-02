@@ -2,17 +2,17 @@
   --gap: 10px;
   display: flex;
   align-items: center;
-}
 
-.stack * + * {
-  margin-left: var(--gap);
+  * + * {
+    margin-left: var(--gap);
+  }
 }
 
 .column {
   flex-direction: column;
-}
 
-.column * + * {
-  margin-left: 0;
-  margin-top: var(--gap);
+  * + * {
+    margin-left: 0;
+    margin-top: var(--gap);
+  }
 }

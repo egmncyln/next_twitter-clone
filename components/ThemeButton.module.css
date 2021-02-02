@@ -5,11 +5,11 @@
   padding-right: 15px;
   height: 40px;
   font-weight: bold;
-}
 
-.button:hover {
-  background-color: var(--c-theme);
-  color: var(--c-text-color);
+  &:hover {
+    background-color: var(--c-theme);
+    color: var(--c-text-color);
+  }
 }
 
 .bigButton {

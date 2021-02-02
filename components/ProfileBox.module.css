@@ -1,9 +1,9 @@
 .box {
   padding: 10px;
-}
 
-.box:hover {
-  color: var(--c-text-color);
+  &:hover {
+    color: var(--c-text-color);
+  }
 }
 
 .body {
