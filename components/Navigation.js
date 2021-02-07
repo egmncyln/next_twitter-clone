@@ -4,7 +4,7 @@ import { Twitter, Home, Explore, Notification, Messages, Bookmark, Lists, Profil
 import TextTitle from './TextTitle';
 import styles from './Navigation.module.css';
 
-function Navigation({ selectedKey }) {
+function Navigation({ flat = false, selectedKey }) {
     return (
         <nav className={styles.nav}>
             <NavButton>
