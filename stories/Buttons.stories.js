@@ -7,9 +7,11 @@ import { Home } from '../components/icons';
 import TextTitle from '../components/TextTitle';
 import ThemeButton from '../components/ThemeButton';
 import Stack from '../components/Stack';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 export default {
   title: 'Example/Buttons',
+  decorators: [withKnobs],
   // component: Button,
   // argTypes: {
   //   backgroundColor: { control: 'color' },
@@ -34,8 +36,10 @@ export const NavigationButton = () => (
     <TextTitle>Home</TextTitle>
   </NavButton>);
 
-export const NavigationFull = () => <Navigation selectedKey="home" />;
-
+export const NavigationFull = () => {
+  const flat = boolean("Flat", false)
+  return < Navigation flat={flat} />
+}
 // Primary.args = {
 //   primary: true,
 //   label: 'Button',

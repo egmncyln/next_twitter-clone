@@ -12,10 +12,6 @@
     margin-right: 15px;
   }
 
-  .buttonSelected {
-    color: var(--c-theme);
-  }
-
   .notify {
     display: flex;
     align-items: center;
@@ -31,4 +27,8 @@
     font-size: 11px;
     border: 1px solid var(--c-theme);
   }
+}
+
+.buttonSelected {
+  color: var(--c-theme);
 }

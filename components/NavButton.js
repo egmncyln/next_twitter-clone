@@ -6,8 +6,8 @@ import cn from 'classnames';
 function NavButton({ notify, selected, children, ...props }) {
     return (
         <Button className={cn(styles.button, selected && styles.buttonSelected)} {...props}>
+            {notify > 0 && <span className={styles.notify}>{notify}</span>}
             {children}
-            {notify && <span className={styles.notify}>{notify}</span>}
         </Button>
     )
 }
