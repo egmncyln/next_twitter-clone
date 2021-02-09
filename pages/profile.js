@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-function HomePage() {
+function ProfilePage() {
     return (
-        <Layout>Home</Layout>
+        <Layout>Profile</Layout>
     )
 }
 
-export default HomePage;
+export default ProfilePage;

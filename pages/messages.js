@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-function HomePage() {
+function MessagesPage() {
     return (
-        <Layout>Home</Layout>
+        <Layout>Messages</Layout>
     )
 }
 
-export default HomePage;
+export default MessagesPage;

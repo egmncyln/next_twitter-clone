@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-function HomePage() {
+function MorePage() {
     return (
-        <Layout>Home</Layout>
+        <Layout>More</Layout>
     )
 }
 
-export default HomePage;
+export default MorePage;

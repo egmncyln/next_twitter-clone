@@ -1,12 +1,35 @@
 import React from 'react';
 import styles from './Button.module.css';
 import cn from 'classnames'; // bizim style ile propstan gelen stylei merge etmek icin kullaniliyor.
+import Link from 'next/link';
 
-function Button({ full = false, children, className, ...props }) {
+function LinkButton({ href, children, ...props }) {
     return (
-        <button type="button" className={cn(styles.button, full && styles.fullWidth, className)} {...props}>
+        <Link href={href}>
+            <a {...props}>
+                {children}
+            </a>
+        </Link>
+    )
+}
+
+function BaseButton({ children, ...props }) {
+    return (
+        <button type="button" {...props}>
             {children}
         </button>
+    )
+}
+
+function Button({ full = false, children, className, ...props }) {
+    const Comp = props.href ? LinkButton : BaseButton;
+    return (
+        <Comp
+            className={cn(styles.button, full && styles.fullWidth, className)}
+            {...props}
+        >
+            {children}
+        </Comp>
     )
 }
 

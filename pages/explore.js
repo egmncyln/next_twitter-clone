@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-function HomePage() {
+function ExplorePage() {
     return (
-        <Layout>Home</Layout>
+        <Layout>Explore</Layout>
     )
 }
 
-export default HomePage;
+export default ExplorePage;
